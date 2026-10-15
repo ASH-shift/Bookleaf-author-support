@@ -1,0 +1,28 @@
+# Dependencies and build output
+node_modules/
+dist/
+coverage/
+
+# Secrets: never commit real environment files (only .env.example is tracked)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local SQLite database (re-created and seeded on start)
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Editor, AI assistant and OS files
+.claude/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
