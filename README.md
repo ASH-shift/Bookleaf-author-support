@@ -1,5 +1,7 @@
 # BookLeaf Author Support & Communication Portal
 
+**Live demo:** https://bookleaf-author-support-ylw1.onrender.com (free tier: the first load after idle can take ~50 seconds; test logins are below)
+
 A web app with two interfaces, an **Author Portal** and an **Admin Support Desk**, for handling author support tickets. AI helps with classification, prioritisation and drafting replies.
 
 - **Author Portal:** view books and royalties, raise tickets, follow replies in real time.
