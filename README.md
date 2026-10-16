@@ -38,10 +38,10 @@ These are demo-only passwords, set by `SEED_AUTHOR_PASSWORD` / `SEED_ADMIN_PASSW
 
 ### Deployment (Render / Railway)
 
-- Build command: `npm install && npm run build`
+- Build command: `npm install --include=dev && npm run build` (`--include=dev` is needed because Vite is a dev dependency and `NODE_ENV=production` would skip it)
 - Start command: `npm start`
 - Environment: `NODE_ENV=production`, `JWT_SECRET` (32+ random characters; the server refuses to start without it), `GROQ_API_KEY`.
-- SQLite lives on the instance disk. On free tiers without a persistent disk, the demo resets (and re-seeds) on each redeploy.
+- SQLite lives on the instance disk. On free tiers without a persistent disk, the demo resets to the sample data whenever the instance restarts. Render's free tier also sleeps after 15 minutes idle, so the first request can take ~50 seconds.
 
 ---
 
